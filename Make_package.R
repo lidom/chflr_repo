@@ -5,7 +5,7 @@
 ## ################################
 
 ## Remove pkg 
-remove.packages("ppfunreg")
+remove.packages("combfunreg")
 
 ## Create/update documentation and (re-)write NAMESPACE
 devtools::document()

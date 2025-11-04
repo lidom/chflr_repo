@@ -1,12 +1,12 @@
-Package: ppfunreg
-Title: What the Package Does (One Line, Title Case)
+Package: combfunreg
+Title: Combining Concurrent and Historical Functional Linear Regression
 Version: 0.0.1.9000
 Authors@R: 
     person("Dominik", "Liebl", , "r.packages.mail@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This packages contains the implementation of the methods proposed in the paper "Combining Concurrent and Historical Functional Linear Regression" by Alois Kneip, Dominik Liebl and Sven Otto
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.2
 Imports: 
     splines2
