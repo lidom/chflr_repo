@@ -1,4 +1,4 @@
 
-# ppfunreg
+# `R`-package chflr
 
-This is work in progress
+This `R` package contains the implementations of the statistical methods introduced in ...
