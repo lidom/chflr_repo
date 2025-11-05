@@ -5,7 +5,7 @@
 ## ################################
 
 ## Remove pkg 
-remove.packages("combfunreg")
+remove.packages("chflr")
 
 ## Create/update documentation and (re-)write NAMESPACE
 devtools::document()

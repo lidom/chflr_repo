@@ -8,7 +8,7 @@
 #' @param rho_rng The range c(min(rho_rng), max(rho_rng)) is used for finding 
 #' the GCV-optimal smoothing parameter rho, if rho = NULL. 
 #' @export
-ppfunreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
+chflr <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
   # Y=Y_sim; X=X_sim; grd=grid; rho = NULL; rho_rng = c(0, 100)
   ##
   grd_orig <- grd
@@ -122,7 +122,7 @@ ppfunreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
                  "rho"           = rho_t,
                  "grid"          = grd_orig)
   ##               
-  class(result) <- "ppfunreg"
+  class(result) <- "chflr"
   ##
   return(result)
 }
@@ -138,7 +138,7 @@ ppfunreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
 # #' @param rho_rng The range c(min(rho_rng), max(rho_rng)) is used for finding 
 # #' the GCV-optimal smoothing parameter rho, if rho = NULL. 
 # #' @export
-# ppfunreg2 <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
+# chflr2 <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
 #   # Y=Y_sim; X=X_sim; grd=grid; rho = NULL; rho_rng = c(0, 100)
 #   ##
 #   grd_orig <- grd
@@ -263,7 +263,7 @@ ppfunreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
 #                  "rho"           = rho_t,
 #                  "grid"          = grd_orig)
 #   ##               
-#   class(result) <- "ppfunreg2"
+#   class(result) <- "chflr2"
 #   ##
 #   return(result)
 # }
@@ -575,7 +575,7 @@ ffreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
 
 
 
-#' #' Visualizes estimation result from \link{ppfunreg}.
+#' #' Visualizes estimation result from \link{chflr}.
 #' #'
 #' #' @param x A 'confidence_band' object, the output from \link{confidence_band} funciton.
 #' #' @param center Whether to include the functional estimate or not.
@@ -584,7 +584,7 @@ ffreg <- function(Y, X, grd, rho = NULL, rho_rng = c(0, 100)){
 #' #' @param ... Graphical parameters to be passed/overrided. If 'center' is TRUE, the first elements of 'col', 'lwd', 'lty' will be used for the estimate and the next ones will be used for the bands, but using the same values for one pair, i.e., lower and upper bounds.
 #' #' @method plot confidence_band
 #' #' @export
-#' plot.ppfunreg <- function(x, center=TRUE, legendx="topleft", legendy=NULL, ...){
+#' plot.chflr <- function(x, center=TRUE, legendx="topleft", legendy=NULL, ...){
 #'   par(mfrow=c(1,3))
 #'   matplot(x = grid, y=cbind(alphaStar,           estim_results$alphaStar_hat), type="l",
 #'           xlab = "", ylab = "", main = "alphaStar", col=c(1,2), lty=c(1,2), lwd=c(1,2))

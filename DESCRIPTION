@@ -1,9 +1,9 @@
-Package: combfunreg
+Package: chflr
 Title: Combining Concurrent and Historical Functional Linear Regression
 Version: 0.0.1.9000
 Authors@R: 
     person("Dominik", "Liebl", , "r.packages.mail@gmail.com", role = c("aut", "cre"))
-Description: This packages contains the implementation of the methods proposed in the paper "Combining Concurrent and Historical Functional Linear Regression" by Alois Kneip, Dominik Liebl and Sven Otto
+Description: This packages contains the implementation of the methods proposed in the paper "Combining Concurrent and Historical Functional Linear Regression" by Alois Kneip, Dominik Liebl and Sven Otto. The main function is the chflr() function.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
